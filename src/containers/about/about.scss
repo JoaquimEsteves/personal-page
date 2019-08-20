@@ -1,0 +1,60 @@
+@import "../../main_colours.scss";
+
+$padding: 15px;
+$tiny_pad: 5px;
+
+.about-content {
+    &.about-title {
+        padding-bottom: $padding;
+
+    }
+
+    &:ul {
+        padding-top: $padding;
+        margin-top: $tiny_pad;
+
+    }
+
+    &:li {
+        margin-top: $tiny_pad;
+    }
+}
+
+.single-info .info-icon {
+    color: $main_colour;
+}
+
+.info-text {
+    padding-left: $tiny_pad;
+    padding-top: $padding;
+}
+
+.about-skills .skill-item .skill-bar .bar-inner {
+    margin: $padding;
+    width: 100%;
+    height: $tiny_pad;
+    position: relative;
+    
+}
+
+.skill-header {
+    margin-top: $tiny_pad
+}
+
+.about-skills .skill-item .skill-bar .bar-inner .progress-line {
+    height: $tiny_pad;
+    border-radius: 20px;
+    background-color: $sub_colour;
+    -webkit-transition: width 2s ease-out 2s;
+    -moz-transition: width 2s ease-out 2s;
+    -ms-transition: width 2s ease-out 2s;
+    -o-transition: width 2s ease-out 2s;
+    transition: width 2s ease-out 2s;
+    width: 0%;
+}
+
+.bar-inner {
+    border-radius: 20px;
+    background-color: $main_colour;
+    width: 0%;
+}

@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+
+@import './main_colours.scss';
+@import 'bootstrap';
+
+// By defining the target we're taking into account the header, so the section isn't blocked
+:target {
+  padding-top: 15vh;
+  margin-top: -15vh;
+}
+
+body {
+  margin: 5% auto;
+  // /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#754ef9+0,ffffff+8,ffffff+92,754ef9+100&0.34+1,0.34+100 */
+  // background: -moz-linear-gradient(left, $main_colour 0%, $background_colour 2%, $background_colour 98%, $main_colour 100%);
+  // /* FF3.6-15 */
+  // background: -webkit-linear-gradient(left, $main_colour 0%, $background_colour 2%, $background_colour 98%, $main_colour 100%);
+  // /* Chrome10-25,Safari5.1-6 */
+  // background: linear-gradient(to right, $main_colour 0%, $background_colour 2%, $background_colour 98%, $main_colour 100%);
+  // /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  // filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#57754ef9', endColorstr='#57754ef9', GradientType=1);
+  // /* IE6-9 */
+
+  // background: linear-gradient(270deg, #003cff25, #ffc40025);
+  // background-size: 400% 400%;
+
+  // -webkit-animation: AnimationName 30s ease infinite;
+  // -moz-animation: AnimationName 30s ease infinite;
+  // animation: AnimationName 30s ease infinite;
+
+  // @-webkit-keyframes AnimationName {
+  //     0%{background-position:0% 50%}
+  //     50%{background-position:100% 50%}
+  //     100%{background-position:0% 50%}
+  // }
+  // @-moz-keyframes AnimationName {
+  //     0%{background-position:0% 50%}
+  //     50%{background-position:100% 50%}
+  //     100%{background-position:0% 50%}
+  // }
+  // @keyframes AnimationName {
+  //     0%{background-position:0% 50%}
+  //     50%{background-position:100% 50%}
+  //     100%{background-position:0% 50%}
+  // }
+
+  background: linear-gradient(270deg, #003cff63, #ffc40063);
+  background-size: 400% 400%;
+
+  -webkit-animation: AnimationName 10s ease infinite;
+  -moz-animation: AnimationName 10s ease infinite;
+  animation: AnimationName 10s ease infinite;
+
+  @-webkit-keyframes AnimationName {
+    0% {
+      background-position: 0% 50%
+    }
+
+    50% {
+      background-position: 100% 51%
+    }
+
+    100% {
+      background-position: 0% 50%
+    }
+  }
+
+  @-moz-keyframes AnimationName {
+    0% {
+      background-position: 0% 50%
+    }
+
+    50% {
+      background-position: 100% 51%
+    }
+
+    100% {
+      background-position: 0% 50%
+    }
+  }
+
+  @keyframes AnimationName {
+    0% {
+      background-position: 0% 50%
+    }
+
+    50% {
+      background-position: 100% 51%
+    }
+
+    100% {
+      background-position: 0% 50%
+    }
+  }
+
+  font-family: 'Nunito',
+  sans-serif;
+
+
+  font-size: 16px;
+  line-height: 1.8;
+  // text-shadow: 0 1px 0 #ffffff;
+}
+
+.btn-lg {
+  border-color: $main_colour;
+  background-color: $background_colour;
+
+  &.round {
+    border-radius: 24px;
+
+  }
+
+  &:hover {
+    background-color: white;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+a:focus,
+input:focus,
+a:hover,
+textarea:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  color: #32333c;
+  margin: 0px;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+h4 {
+  font-size: 22px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+ul,
+ol {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #8a8fa3;
+  margin: 0px;
+}
+
+.section-title .title {
+  font-weight: 700;
+  font-size: 45px;
+  color: #000;
+  padding-bottom: 20px;
+}

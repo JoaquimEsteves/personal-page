@@ -1,0 +1,31 @@
+@import '../../main_colours.scss';
+@import 'bootstrap';
+
+.contact-form {
+    @extend .text-center;
+    margin-top: 30px;
+    z-index: -99;
+    input, textarea {
+        width: 60%;
+        height: 55px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+        padding: 0 25px;
+        font-size: 16px;
+        color: #8a8fa3;
+    }
+
+    .placeholder {
+        opacity: 1;
+        color: #8a8fa3;
+    }
+
+    :focus {
+        border-color: $sub_colour;
+    }
+
+    textarea {
+        height: 200px;
+        padding-top: 10px;
+    }
+}
