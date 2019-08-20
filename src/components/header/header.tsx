@@ -15,10 +15,10 @@ const Header = () => {
 
                                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                                     <ul className="navbar-nav ml-auto">
-                                        <li className="nav-item"><a className="page-scroll" href="#home">Home</a></li>
-                                        <li className="nav-item"><a className="page-scroll" href="#about">About</a></li>
-                                        <li className="nav-item"><a className="page-scroll" href="#work">Experience</a></li>
-                                        <li className="nav-item"><a className="page-scroll" href="#contact">Contact</a></li>
+                                        <li><a href="#home">Home</a></li>
+                                        <li><a href="#about">About</a></li>
+                                        <li><a href="#work">Experience</a></li>
+                                        <li><a href="#contact">Contact</a></li>
                                     </ul>
                                 </div>
                             </nav>
@@ -31,7 +31,6 @@ const Header = () => {
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-xl-5 col-lg-6">
-                            <h4 className="sub-title">Computer Software Engineer</h4>
                             <h1 className="title">Joaquim Esteves</h1>
                             <p>Computer Software Engineer</p>
                         </div>

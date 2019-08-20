@@ -45,10 +45,6 @@ $tiny_pad: 5px;
     height: $tiny_pad;
     border-radius: 20px;
     background-color: $sub_colour;
-    -webkit-transition: width 2s ease-out 2s;
-    -moz-transition: width 2s ease-out 2s;
-    -ms-transition: width 2s ease-out 2s;
-    -o-transition: width 2s ease-out 2s;
     transition: width 2s ease-out 2s;
     width: 0%;
 }
@@ -57,4 +53,8 @@ $tiny_pad: 5px;
     border-radius: 20px;
     background-color: $main_colour;
     width: 0%;
+}
+
+.skill-stars {
+    float: right;
 }

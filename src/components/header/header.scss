@@ -4,27 +4,22 @@
     padding: 1vh;
     background-color: $background_colour;
     border-bottom: 2px solid $main_colour;
-}
-
-.nav-item {
-    margin-left: 30px;
-}
-
-.navigation .navbar .navbar-nav .nav-item a {
     text-transform: uppercase;
     font-size: 16px;
     color: $main_colour;
     font-weight: 500;
-    position: relative;
+    
+    li {
+        margin-left: 30px;
+    
+    }
 }
+
 
 
 .header-content {
     height: 80vh;
     width: 100%;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
     background-color: $background_colour_with_transparency;
 }
 

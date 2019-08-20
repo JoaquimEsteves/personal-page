@@ -4,7 +4,7 @@ import './contact.scss';
 class Contact extends React.Component {
     render() {
         return (
-            <div id="contact">
+            <section id="contact">
                 <form id="contact-me-form">
                     <div className="contact-form">
                         <input type="text" name="header" placeholder="Header" />
@@ -20,7 +20,7 @@ class Contact extends React.Component {
                         <button className="btn-lg round" type="submit">Send me an e-mail!</button>
                     </div>
                 </form>
-            </div>
+            </section>
         );
     }
 }

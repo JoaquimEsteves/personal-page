@@ -31,7 +31,14 @@ const Skill = (skill: skill) => {
     return (
         <div key={skill.key} className="skill-item mt-25">
             <div className="skill-header">
-                <h6 className="skill-title">{skill.name + ': ' + '★'.repeat(skill.proficiency)}</h6>
+                <div className="row">
+                    <div className="col-lg-6">
+                        <h6>{skill.name}</h6>
+                    </div>
+                    <div className="col-lg-6">
+                        <h6 className="skill-stars">{'★'.repeat(skill.proficiency)}</h6>
+                    </div>
+                </div>
             </div>
             <div className="skill-bar" data-width={data_with}>
                 <div className="bar-inner">

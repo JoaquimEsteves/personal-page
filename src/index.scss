@@ -10,6 +10,16 @@
 }
 
 body {
+  font-family: 'Nunito',
+    sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+
+  section {
+    margin-top: 50px;
+  }
+
+  // Fancy background
   background: linear-gradient(270deg, #003cff63, #ffc40063);
   background-size: 400% 400%;
 
@@ -59,13 +69,7 @@ body {
     }
   }
 
-  font-family: 'Nunito',
-  sans-serif;
 
-
-  font-size: 16px;
-  line-height: 1.8;
-  // text-shadow: 0 1px 0 #ffffff;
 }
 
 .btn-lg {
