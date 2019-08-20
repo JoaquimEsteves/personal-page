@@ -1,39 +1,37 @@
 @import '../../main_colours.scss';
 
 
-.footer-area {
-    padding-top: 52px;
-}
-
-.footer-widget {
+.footer {
+    position: absolute;
+    margin-top: 52px;
     background-color: #152136;
+    width: 100%;
+    .footer-content {
+        padding-top: 25px;
+        text-shadow: none;
+        ul,
+        li {
+            padding-left: 5px;
+            display: inline;
+        
+        }
+        
+        p {
+            color: white;
+            font-size: 25px;
+        }
+    
+        ul,
+        li,
+        a {
+            font-size: 75px;
+            border-radius: 10%;
+        }
+        a:hover {
+            background-color: $main_colour;
+            color: white;
+        }
+    }
 }
 
-
-.footer-content {
-    padding-top: 25px;
-    text-shadow: none;
-    ul,
-    li {
-        padding-left: 5px;
-        display: inline;
-    
-    }
-    
-    p {
-        color: white;
-        font-size: 25px;
-    }
-
-    ul,
-    li,
-    a {
-        font-size: 75px;
-        border-radius: 10%;
-    }
-    a:hover {
-        background-color: $main_colour;
-        color: white;
-    }
-}
 

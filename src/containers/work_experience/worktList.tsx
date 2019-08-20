@@ -1,5 +1,4 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.css';
 import './workList.scss';
 
 const DEFAULT_LOCATION = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d99579.84796264156!2d-9.230242104259075!3d38.743739594088744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd19331a61e4f33b%3A0x400ebbde49036d0!2sLisbon%2C+Portugal!5e0!3m2!1sen!2sfr!4v1565698302061!5m2!1sen!2sfr";

@@ -1,8 +1,7 @@
 @import '../../main_colours.scss';
-@import 'bootstrap';
 
 .contact-form {
-    @extend .text-center;
+    text-align: center;
     margin-top: 30px;
     z-index: -99;
     input, textarea {
