@@ -38,7 +38,7 @@ class App extends React.Component {
           <About skills={exampleSkills.skills} />
           <ErrorBoundary>
             <Suspense fallback={<h1>Loading...</h1>}>
-              <WorkList works={exampleWork.works} />
+              <WorkList {...exampleWork} />
             </Suspense>
           </ErrorBoundary>
           <Contact />
