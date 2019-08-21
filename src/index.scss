@@ -9,6 +9,13 @@
   margin-top: -15vh;
 }
 
+.box {
+  background: linear-gradient(to right, transparent 0%, $background_colour 50%, transparent 100%);
+  border-bottom: 3px solid $background_colour;
+  border-top: 3px solid $background_colour;
+  margin-bottom: 3px;
+}
+
 body {
   font-family: 'Nunito',
     sans-serif;
