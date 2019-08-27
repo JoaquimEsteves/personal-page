@@ -14,7 +14,6 @@ type WorkProps = {
 }
 
 export interface RealWorkProps extends WorkProps {
-    key: number
     onClick: () => void;
 }
 
@@ -23,7 +22,7 @@ const ExperienceCard = (props: RealWorkProps) => {
         return <p className="mb-1" key={id}>{paragraph}</p>
     });
     return (
-        <div key={props.key}
+        <div
             onClick={props.onClick}
             className="work-box text-center">
             {   // If it's a clickable element, give it a little marker icon
@@ -84,8 +83,8 @@ class WorkList extends React.Component<WorkListProps, WorkListState> {
 
         const getCards = (experience: WorkProps[], className: string) => {
             return experience.map((experience_props, id) => {
-                return <div className={className}>{
-                    ExperienceCard({ ...experience_props, key: id, onClick: setupOnClick(experience_props) })
+                return <div className={className} key={id}>{
+                    ExperienceCard({ ...experience_props, onClick: setupOnClick(experience_props) })
                 }</div>;
             });
         }
