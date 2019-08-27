@@ -1,5 +1,5 @@
 import React from 'react';
-import Map from 'pigeon-maps';
+import Map from './pigeon-maps-fork/index';
 import Marker from 'pigeon-marker';
 
 export type map_props = {
@@ -8,14 +8,10 @@ export type map_props = {
     zoom: number,
 }
 
-/**
- * test values
- *     <Map center={[50.879, 4.6997]} zoom={12}>
-        <Marker anchor={[50.874, 4.6947]} />
-    </Map>
- */
-
 const myMap = (props: map_props) => (
+    // I have to ignore this line, given that it's a build file.
+    // And there's no typing 
+    //@ts-ignore
     <Map center={props.center} zoom={props.zoom}>
         {props.anchor 
             ? <Marker anchor={props.anchor} />
