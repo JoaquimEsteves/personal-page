@@ -1,17 +1,27 @@
 import React, { Fragment } from 'react';
+import { map_props } from './map/map';
 
+export type experience_paragraph = {
+    title: string,
+    paragraphs: (string | JSX.Element)[],
+    location?: map_props,
+}
 
-export const city_college_plymouth = {
+export const city_college_plymouth: experience_paragraph = {
     title: "City College Plymouth, UK",
     paragraphs: [
         `A-Levels, Finished in July 2012
         Subjects: Maths, Physics and Film Studies`,
         `I've had the priviledge of having studied in the United Kingdom, which did wonders for my English!`
     ],
-    location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20359.415677540073!2d-4.1571976803693325!3d50.36791641391405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486c936b9390d647%3A0xaaf83fc30630e78c!2sCity+College+Plymouth!5e0!3m2!1sfr!2sfr!4v1566387612606!5m2!1sfr!2sfr"
+    location: {
+        center: [50.3679, -4.1434],
+        anchor: [50.37363, -4.16642],
+        zoom: 13
+    }
 }
 
-export const tecnico = {
+export const tecnico: experience_paragraph = {
     title: "Instituto Superior Técnico, Lisboa - Portugal",
     paragraphs: [
         `Bologna Degree in Information Systems and Computer Engineering , Finished in July 2017`,
@@ -22,11 +32,15 @@ export const tecnico = {
             > here</a></Fragment>,
         <Fragment><i>The</i> prestige Engineering university in Portugal</Fragment>
     ],
-    location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3112.1718215239357!2d-9.140893684795914!3d38.7368191795958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1933a24aa81f17%3A0x880c7c731a54423!2sInstituto+Superior+T%C3%A9cnico!5e0!3m2!1sfr!2sfr!4v1566388055231!5m2!1sfr!2sfr"
+    location: {
+        center: [38.7372, -9.1308],
+        anchor: [38.73676, -9.13807],
+        zoom: 12
+    }
 
 }
 
-export const orange = {
+export const orange: experience_paragraph = {
     title: `Orange - AKKA Lyon
     Duration: 6 Months`,
     paragraphs: [
@@ -42,10 +56,14 @@ export const orange = {
             I'm particularly proud of the server-side data processing, as the interface queried the backend extensively for the next table of data!
         </Fragment>,
     ],
-    location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2783.801849465823!2d4.832653915440619!3d45.755118279105446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea51c2f672d1%3A0xaab93858fed36ccb!2sA.v.e.a.+la+Poste!5e0!3m2!1sfr!2sfr!4v1566393141974!5m2!1sfr!2sfr"
+    location: {
+        center: [45.7516,4.8289],
+        anchor: [45.7550827, 4.8347088],
+        zoom: 12
+    }
 }
 
-export const hyperloop = {
+export const hyperloop: experience_paragraph = {
     title: `HyperLoop Transportation Technologies - AKKA Toulouse
     Duration: 6 Months`,
     paragraphs: [
@@ -66,11 +84,15 @@ export const hyperloop = {
 
 
     ],
-    location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2892.2160521763344!2d1.3678176165004357!3d43.53953806778952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aeb9e396a82ee3%3A0x4e5c1be16fd322a5!2sHyperloop+Transportation+Technologies!5e0!3m2!1sen!2sfr!4v1566397592260!5m2!1sen!2sfr"
+    location: {
+        center: [43.5751,1.4414],
+        anchor: [43.53716,1.36477],
+        zoom: 11
+    }
 }
 
 
-export const telespazio = {
+export const telespazio: experience_paragraph = {
     title: `Telespazio - AKKA Toulouse
     Duration: 1 Month`,
     paragraphs: [
@@ -78,14 +100,18 @@ export const telespazio = {
         <Fragment>
             The <code>C++</code> server was undergoing an transformation in regards to their
         messaging protocol. Having recently adopted the <code>Protobuf</code> protocol.
-                        My job was to create a test suite for these messages.
+                            My job was to create a test suite for these messages.
         </Fragment>
     ],
 
-    location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.4663007950985!2d1.3622895165017!3d43.659271060054216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aeaf87dd1b2eab%3A0x8cd37106551adcaf!2sAKKA+Technologies!5e0!3m2!1sen!2sfr!4v1566398334714!5m2!1sen!2sfr"
+    location: {
+        center: [43.5751,1.4414],
+        anchor: [43.65933,1.36427],
+        zoom: 11
+    }
 }
 
-export const sigfox = {
+export const sigfox: experience_paragraph = {
     title: `Sigfox - AKKA Toulouse
     Duration: 4 Month`,
     paragraphs: [
@@ -103,5 +129,9 @@ export const sigfox = {
         `As a full-stack developer I also had to edit the existing Front-End. The Front end was build with the classic 
         front end tools of plain old Vanilla Js, HTML and CSS with a dash of bootstrap`
     ],
-    location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.4663007950985!2d1.3622895165017!3d43.659271060054216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aeaf87dd1b2eab%3A0x8cd37106551adcaf!2sAKKA+Technologies!5e0!3m2!1sen!2sfr!4v1566398334714!5m2!1sen!2sfr"
+    location: {
+        center: [43.5751,1.4414],
+        anchor: [43.65933,1.36427],
+        zoom: 11
+    }
 }

@@ -1,19 +1,23 @@
 import React from 'react';
 import './workList.scss';
 import ErrorBoundary from '../../components/error_boundaries/error-boundaries';
-import { city_college_plymouth, tecnico, orange, telespazio, hyperloop, sigfox } from './paragraphs';
+import { experience_paragraph, city_college_plymouth, tecnico, orange, telespazio, hyperloop, sigfox } from './paragraphs';
 import Scroll from './scroll/scroll';
+import Map, { map_props } from './map/map';
 
 
-const DEFAULT_LOCATION = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d99579.84796264156!2d-9.230242104259075!3d38.743739594088744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd19331a61e4f33b%3A0x400ebbde49036d0!2sLisbon%2C+Portugal!5e0!3m2!1sen!2sfr!4v1565698302061!5m2!1sen!2sfr";
-
-type WorkProps = {
-    title: string,
-    paragraphs: (string | JSX.Element)[],
-    location?: string,
+const DEFAULT_LOCATION: map_props = {
+    center: [45.7516, 4.8289],
+    zoom: 12
 }
 
-export interface RealWorkProps extends WorkProps {
+// type WorkProps = {
+//     title: string,
+//     paragraphs: (string | JSX.Element)[],
+//     location?: string,
+// }
+
+export interface RealWorkProps extends experience_paragraph {
     onClick: () => void;
 }
 
@@ -38,8 +42,8 @@ const ExperienceCard = (props: RealWorkProps) => {
 }
 
 export interface WorkListProps {
-    work: WorkProps[],
-    education: WorkProps[],
+    work: experience_paragraph[],
+    education: experience_paragraph[],
     location_src?: string
 }
 
@@ -57,7 +61,7 @@ export const exampleWork: WorkListProps = {
 };
 
 export type WorkListState = {
-    location_src: string
+    location_src: map_props
 }
 
 class WorkList extends React.Component<WorkListProps, WorkListState> {
@@ -69,19 +73,21 @@ class WorkList extends React.Component<WorkListProps, WorkListState> {
     }
 
     render() {
-        const setupOnClick = (experience_props: WorkProps) => {
+        const setupOnClick = (experience_props: experience_paragraph) => {
             let onClick = () => { };
             if (experience_props.location) {
                 onClick = () => {
+                    console.log(this.state.location_src !== experience_props.location);
+                    console.log(this.state.location_src, 'yo!', experience_props.location);
                     if (this.state.location_src !== experience_props.location) {
-                        this.setState({ location_src: experience_props.location as string })
+                        this.setState({ location_src: experience_props.location as map_props })
                     }
                 }
             }
             return onClick;
         }
 
-        const getCards = (experience: WorkProps[], className: string) => {
+        const getCards = (experience: experience_paragraph[], className: string) => {
             return experience.map((experience_props, id) => {
                 return <div className={className} key={id}>{
                     ExperienceCard({ ...experience_props, onClick: setupOnClick(experience_props) })
@@ -104,26 +110,20 @@ class WorkList extends React.Component<WorkListProps, WorkListState> {
                     </div>
                     <div className="row">
                         <div className="col-md-7 scrollable">
-                                <h4 className="row justify-content-center">Education</h4>
-                                <div className="row justify-content-center">
-                                    {education_cards}
-                                </div>
-                                <h4 className="row justify-content-center">Work</h4>
-                        <Scroll>
+                            <h4 className="row justify-content-center">Work</h4>
+                            <Scroll>
                                 <div className="row justify-content-center">
                                     {work_cards}
                                 </div>
-                        </Scroll>
+                            </Scroll>
+                            <h4 className="row justify-content-center">Education</h4>
+                            <div className="row justify-content-center">
+                                {education_cards}
+                            </div>
                         </div>
                         <div className="col-md-5 work-map">
                             <ErrorBoundary>
-                                <div className="gmap_canvas">
-                                    <iframe
-                                        title='yo'
-                                        id="giframe"
-                                        src={this.state.location_src}
-                                        scrolling="yes" />
-                                </div>
+                                {Map(this.state.location_src)}
                             </ErrorBoundary>
                         </div>
                     </div>
