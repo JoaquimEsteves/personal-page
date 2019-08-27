@@ -9,8 +9,13 @@ const Footer = () => {
                     <div className="footer-content text-center">
                         <p>Check me out on Linkdn</p>
                         <p>Or download my CV</p>
-                        <a href="_blank"><i className="lni-linkedin-original" /></a>
-                        <a href="_blank"><i className="lni-download"></i></a>
+                        <a
+                            target="_blank"
+                            href="https://www.linkedin.com/in/joaquim-esteves">
+                            <i className="lni-linkedin-original" /></a>
+                        <a
+                            target="_blank"
+                            href="_blank"><i className="lni-download"></i></a>
                     </div>
                 </div>
             </div>
