@@ -49,6 +49,32 @@ const Skill = (skill: skill) => {
     );
 }
 
+const AboutIntro = () => (
+    <div className="row justify-content-center">
+        <div className="col-lg-8">
+            <div className="section-title box text-center">
+                <h2 className="title">Texto De Introducao</h2>
+                <p>Nunc id dui at sapien faucibus fermentum ut vel diam. Nullam tempus, nunc id efficitur
+                            sagittis, urna est ultricies eros, ac porta sem turpis quis leo.
+                </p>
+            </div>
+        </div>
+    </div>
+);
+
+const Info = (explanation: string, contact: string, icon: string) => (
+    <li>
+        <div className="single-info d-flex align-items-center">
+            <div className="info-icon">
+                <i className={icon}></i>
+            </div>
+            <div className="info-text">
+                <p><span>{explanation}</span> {contact}</p>
+            </div>
+        </div>
+    </li>
+);
+
 export class About extends React.PureComponent<aboutProps> {
 
     componentDidMount() {
@@ -67,15 +93,7 @@ export class About extends React.PureComponent<aboutProps> {
         return (
             <section id="about" className="about-area">
                 <div className="container">
-                    <div className="row justify-content-center">
-                        <div className="col-lg-8">
-                            <div className="section-title box text-center">
-                                <h2 className="title">Texto De Introducao</h2>
-                                <p>Nunc id dui at sapien faucibus fermentum ut vel diam. Nullam tempus, nunc id efficitur
-                            sagittis, urna est ultricies eros, ac porta sem turpis quis leo.</p>
-                            </div>
-                        </div>
-                    </div>
+                    <AboutIntro />
                     <div className="row">
                         <div className="col-lg-6">
                             <div className="about-content">
@@ -84,46 +102,26 @@ export class About extends React.PureComponent<aboutProps> {
                                     labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                             laboris nisi ut aliquip ex ea commodo consequat.</p>
                                 <ul>
-                                    <li>
-                                        <div className="single-info d-flex align-items-center">
-                                            <div className="info-icon">
-                                                <i className="lni-calendar"></i>
-                                            </div>
-                                            <div className="info-text">
-                                                <p><span>Data de nascimento</span> ??????</p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div className="single-info d-flex align-items-center">
-                                            <div className="info-icon">
-                                                <i className="lni-envelope"></i>
-                                            </div>
-                                            <div className="info-text">
-                                                <p><span>Email:</span> ?????</p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div className="single-info d-flex align-items-center">
-                                            <div className="info-icon">
-                                                <i className="lni-phone-handset"></i>
-                                            </div>
-                                            <div className="info-text">
-                                                <p><span>Telefone:</span> +351 ????</p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div className="single-info d-flex align-items-center">
-                                            <div className="info-icon">
-                                                <i className="lni-map-marker"></i>
-                                            </div>
-                                            <div className="info-text">
-                                                <p><span>Localicacao:</span> ????</p>
-                                            </div>
-                                        </div>
-                                    </li>
+                                    {Info(
+                                        'Birth Date:',
+                                        '01/09/39',
+                                        'lni-calendar'
+                                    )}
+                                    {Info(
+                                        'Email:',
+                                        '???????',
+                                        'lni-envelope'
+                                    )}
+                                    {Info(
+                                        'Phone Number',
+                                        '???????',
+                                        'lni-phone-handset'
+                                    )}
+                                    {Info(
+                                        '',
+                                        'Currently in Lyon - France',
+                                        'lni-map-marker'
+                                    )}
                                 </ul>
                             </div>
                         </div>
