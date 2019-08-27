@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Joaquim Esteves",
+  "name": "Joaquim Esteves' Most Magnificent React Personal Webpage!",
   "icons": [
     {
       "src": "favicon.ico",
@@ -20,6 +20,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "rgba(52, 69, 254, 1)",
+  "background_color": "rgba(254,166,52,1)"
 }
