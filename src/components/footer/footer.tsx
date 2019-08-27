@@ -11,10 +11,12 @@ const Footer = () => {
                         <p>Or download my CV</p>
                         <a
                             target="_blank"
+                            rel="noopener noreferrer"
                             href="https://www.linkedin.com/in/joaquim-esteves">
                             <i className="lni-linkedin-original" /></a>
                         <a
                             target="_blank"
+                            rel="noopener noreferrer"
                             href="_blank"><i className="lni-download"></i></a>
                     </div>
                 </div>
@@ -24,4 +26,4 @@ const Footer = () => {
 }
 
 
-export default React.memo(Footer);
+export default Footer;
