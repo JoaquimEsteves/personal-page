@@ -11,11 +11,6 @@ const DEFAULT_LOCATION: map_props = {
     zoom: 12
 }
 
-// type WorkProps = {
-//     title: string,
-//     paragraphs: (string | JSX.Element)[],
-//     location?: string,
-// }
 
 export interface RealWorkProps extends experience_paragraph {
     onClick: () => void;
@@ -77,8 +72,6 @@ class WorkList extends React.Component<WorkListProps, WorkListState> {
             let onClick = () => { };
             if (experience_props.location) {
                 onClick = () => {
-                    console.log(this.state.location_src !== experience_props.location);
-                    console.log(this.state.location_src, 'yo!', experience_props.location);
                     if (this.state.location_src !== experience_props.location) {
                         this.setState({ location_src: experience_props.location as map_props })
                     }
