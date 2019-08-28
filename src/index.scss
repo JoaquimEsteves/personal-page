@@ -24,17 +24,17 @@
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: -1;
 }
 
 body {
   font-family: 'Nunito',
     sans-serif;
-  font-size: 16px;
+  font-size: 6+16px;
   line-height: 1.8;
 
   section {
     margin-top: 50px;
+    z-index: 99;
   }
 
   // Fancy background
@@ -129,27 +129,27 @@ h6 {
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 6+60px;
 }
 
 h2 {
-  font-size: 36px;
+  font-size: 6+36px;
 }
 
 h3 {
-  font-size: 28px;
+  font-size: 6+28px;
 }
 
 h4 {
-  font-size: 22px;
+  font-size: 6+22px;
 }
 
 h5 {
-  font-size: 18px;
+  font-size: 6+18px;
 }
 
 h6 {
-  font-size: 16px;
+  font-size: 6+16px;
 }
 
 ul,
@@ -160,10 +160,10 @@ ol {
 }
 
 p {
-  font-size: 16px;
+  font-size: 6+16px;
   font-weight: 400;
   line-height: 28px;
-  color: #8a8fa3;
+  color: #000000c9;
   margin: 0px;
 }
 

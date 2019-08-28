@@ -143,14 +143,14 @@ class App extends React.Component {
     // Promise Interface and componentDidMount ensure load only once.
     new_cdn_load(lineicons_cdn);
   }
-  
+
   render() {
     return (
       <div className="App">
         <React.StrictMode>
           <Header />
           <Particles className="pretty_particles" params={pretty_particles} />
-            <About skills={exampleSkills.skills} />
+          <About skills={exampleSkills.skills} />
           <ErrorBoundary>
             <Suspense fallback={<h1>Loading...</h1>}>
               <WorkList {...exampleWork} />

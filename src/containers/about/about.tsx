@@ -64,7 +64,7 @@ const AboutIntro = () => (
     </div>
 );
 
-const Info = (explanation: string, contact: string, icon: string) => (
+const Info = (explanation: string, contact: string | JSX.Element, icon: string) => (
     <li>
         <div className="single-info d-flex align-items-center">
             <div className="info-icon">
@@ -99,7 +99,7 @@ export class About extends React.PureComponent<aboutProps> {
                     <div className="row">
                         <div className="col-lg-6">
                             <div className="about-content">
-                                <h5 className="about-title">Overview</h5>
+                                <h4 className="about-title">Overview</h4>
                                 <p>
                                     I'm a Portuguese Software Engineer, I like long walks on the beach, travelling
                                     and programming.
@@ -114,9 +114,12 @@ export class About extends React.PureComponent<aboutProps> {
                                     so if you've got a Flask/React/Etc project don't hesitate to ask me for my experience!
 
                                 </p>
+                                <br />
                                 <ul>
                                     {Info('Birth Date:', '01/09/93', 'lni-calendar')}
-                                    {Info('Email:', 'hire.joaquim.esteves@gmail.com', 'lni-envelope')}
+                                    {Info('Email:',
+                                     <Fragment><a href="#contact">hire.joaquim.esteves@gmail.com</a></Fragment>,
+                                     'lni-envelope')}
                                     {Info('', 'Currently in Lyon - France', 'lni-map-marker')}
                                 </ul>
                                 <br />
@@ -134,24 +137,24 @@ export class About extends React.PureComponent<aboutProps> {
                     <div className="row justify-content-center">
                         <div className="col-md-6">
                             <div className="about-content">
-                                <h5 className="about-title">Stuff I'm not good at, but would love to learn!</h5>
+                                <h4 className="about-title">Stuff I'm not good at, but would love to learn!</h4>
                                 <ul>
                                     <li className="mt-2">
-                                        Data Science
+                                        <p><b>Data Science</b></p>
                                         <p>
-                                            As a self ted Python nerd and zealot I'd love to sink my teeth into
+                                            As a self admitted Python nerd and zealot I'd love to sink my teeth into
                                             this field!
                                         </p>
                                     </li>
                                     <li className="mt-4">
-                                        Machine Learning
+                                        <p><b>Machine Learning</b></p>
                                         <p>
                                             Have you <b>seen</b> the stuff people are up to nowadays with
                                             machine learning? It's like magic, of course I want to learn!
                                         </p>
                                     </li>
                                     <li className="mt-4">
-                                        Various FrontEnd Frameworks
+                                        <p><b>Various FrontEnd Frameworks</b></p>
                                         <p>
                                             I've mostly worked as a backend developer, with this very site being the
                                             first project I've ever completed using a javascript library that's more
@@ -171,16 +174,16 @@ export class About extends React.PureComponent<aboutProps> {
                         </div>
                         <div className="col-md-6">
                             <div className="about-content">
-                                <h5 className="about-title">Real World Languages</h5>
+                                <h4 className="about-title">Real World Languages</h4>
                                 <ul>
                                     <li>
-                                        Portuguese
+                                        <p><b>Portuguese</b></p>
                                         <p>
                                             It's my mother tongue, although I've been told I have a funny accent.
                                         </p>
                                     </li>
                                     <li>
-                                        Spanish
+                                        <p><b>Spanish</b></p>
                                         <p>
                                             All Portuguese come with the Spanish-language package by default.
                                             Many of the friends I've made throughout my life as an emigrant have been Spaniards,
@@ -191,7 +194,7 @@ export class About extends React.PureComponent<aboutProps> {
                                         </p>
                                     </li>
                                     <li>
-                                        English
+                                        <p><b>English</b></p>
                                         <p>
                                             I lived two years in Plymouth UK and have considered myself quite fluent
                                              in English for many years.
@@ -200,7 +203,7 @@ export class About extends React.PureComponent<aboutProps> {
                                         </p>
                                     </li>
                                     <li>
-                                        French
+                                        <p><b>French</b></p>
                                         <p>
                                             I've been living in France for the past year and half,
                                              having worked for the past six months entirely in French; although it's

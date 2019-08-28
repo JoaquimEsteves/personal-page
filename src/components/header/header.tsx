@@ -6,26 +6,26 @@ const Header = () => {
     return (
         <header id="home" className="header-area">
             <div className="navigation fixed-top">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-12">
+                {/* <div className="container"> */}
+                    {/* <div className="row"> */}
+                        {/* <div className="col-lg-12"> */}
                             <nav className="navbar-expand-lg">
                                 {/* ADD LOGO HERE YO <a className="navbar-brand" href="index.html">
                                     <img src="" alt="Logo aqui" />
                                 </a> */}
 
-                                <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                                    <ul className="navbar-nav ml-auto">
+                                {/* <div> */}
+                                    <ul className="navbar-nav">
                                         <li><a href="#home">Home</a></li>
                                         <li><a href="#about">About</a></li>
                                         <li><a href="#work">Experience</a></li>
                                         <li><a href="#contact">Contact</a></li>
                                     </ul>
-                                </div>
+                                {/* </div> */}
                             </nav>
-                        </div>
-                    </div>
-                </div>
+                        {/* </div> */}
+                    {/* </div> */}
+                {/* </div> */}
             </div>
 
             <div className="header-content d-flex align-items-center">

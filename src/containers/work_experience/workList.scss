@@ -18,6 +18,7 @@
     height: 100%;
     align-items: center;
     cursor: pointer;
+    border-radius: 0px 40px 0px 40px;
     &:hover {
         // Add a little shadow on hover
         border: 1px solid $sub_colour;
