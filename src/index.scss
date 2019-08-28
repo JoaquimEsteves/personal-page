@@ -27,6 +27,24 @@
   z-index: -1;
 }
 
+.content-box {
+  overflow-wrap: break-word;
+  margin: 5px;
+  border: 2px solid $main_colour;
+  margin-top: 5px;
+  padding: 30px;
+  height: 100%;
+  align-items: center;
+  background-color: $background_colour_with_transparency; 
+  border-radius: 25px;
+  &:hover {
+      // Add a little shadow on hover
+      border: 1px solid $sub_colour;
+      box-shadow: 0px 0px 21px 0px $sub_colour;
+      transition: box-shadow 0.3s ease-out 0s;
+  }
+}
+
 body {
   font-family: 'Nunito',
     sans-serif;

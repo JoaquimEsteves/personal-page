@@ -98,7 +98,7 @@ export class About extends React.PureComponent<aboutProps> {
                     <AboutIntro />
                     <div className="row">
                         <div className="col-lg-6">
-                            <div className="about-content">
+                            <div className="about-content content-box">
                                 <h5 className="about-title">Overview</h5>
                                 <p>
                                     I'm a Portuguese Software Engineer, I like long walks on the beach, travelling
@@ -131,9 +131,9 @@ export class About extends React.PureComponent<aboutProps> {
                         </div>
                     </div>
 
-                    <div className="row justify-content-center">
+                    <div className="row justify-content-center mt-5">
                         <div className="col-md-6">
-                            <div className="about-content">
+                            <div className="about-content content-box">
                                 <h5 className="about-title">Stuff I'm not good at, but would love to learn!</h5>
                                 <ul>
                                     <li className="mt-2">
@@ -170,7 +170,7 @@ export class About extends React.PureComponent<aboutProps> {
                             </div>
                         </div>
                         <div className="col-md-6">
-                            <div className="about-content">
+                            <div className="about-content content-box">
                                 <h5 className="about-title">Real World Languages</h5>
                                 <ul>
                                     <li>
