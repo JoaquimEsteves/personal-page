@@ -115,7 +115,7 @@ export class About extends React.PureComponent<aboutProps> {
 
                                 </p>
                                 <ul>
-                                    {Info('Birth Date:', '01/09/39', 'lni-calendar')}
+                                    {Info('Birth Date:', '01/09/93', 'lni-calendar')}
                                     {Info('Email:', 'hire.joaquim.esteves@gmail.com', 'lni-envelope')}
                                     {Info('', 'Currently in Lyon - France', 'lni-map-marker')}
                                 </ul>
