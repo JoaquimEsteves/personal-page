@@ -38,7 +38,8 @@ body {
   }
 
   // Fancy background
-  background: linear-gradient(270deg, #003cff63, #ffc40063);
+  background: linear-gradient(270deg, $main_colour_with_transparency, $sub_colour_with_transparency);
+  // opacity: 0.63;    
   background-size: 400% 400%;
 
   -webkit-animation: AnimationName 10s ease infinite;

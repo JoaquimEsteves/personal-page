@@ -1,6 +1,11 @@
 // Classic blue and orange scheme. These vars are then imported by the scss
-$main_colour: rgba(52, 69, 254, 1);
-$sub_colour: rgba(254, 166, 52, 1);
+// It's called Maya Blue :)
+$main_colour: #61B3FF; 
+$main_colour_with_transparency: #61B3FF63; 
+$sub_colour: SandyBrown;
+$sub_colour_with_transparency: #f4a46063;
+
+
 $background_colour: #f2f2f2;
 $background_colour_with_transparency: #f2f2f2da;
 $text_colour: #444444;
