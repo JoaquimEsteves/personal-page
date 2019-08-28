@@ -6,7 +6,7 @@ class Contact extends React.Component {
     render() {
         return (
             <section id="contact">
-                <form action="https://formspree.io/joaquimbve@hotmail.com" method="POST">
+                <form action="https://formspree.io/hire.joaquim.esteves@gmail.com" method="POST">
                     <div className="contact-form">
                         <input type="text" name="header" placeholder="Header" required/>
                     </div>

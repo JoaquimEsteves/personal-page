@@ -1,5 +1,6 @@
 import React from 'react'
 import './header.scss';
+// import picture_of_me from '../../img/me_512.png';
 
 const Header = () => {
     return (
@@ -34,8 +35,8 @@ const Header = () => {
                             <h1 className="title">Joaquim Esteves</h1>
                             <p>Computer Software Engineer</p>
                         </div>
-                        <div className="col-lg-6 offset-xl-1">
-                            <img src="" alt="me!" />
+                        <div className="col-6 offset-xl-1 mt-10">
+                            <div className="image_of_me" title="me, looking all handsome"/>
                         </div>
                     </div>
                 </div>
