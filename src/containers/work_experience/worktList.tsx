@@ -103,8 +103,9 @@ class WorkList extends React.Component<WorkListProps, WorkListState> {
                         <div className="col-lg-8">
                             <div className="section-title box text-center">
                                 <h2 className="title">Experience & Education</h2>
-                                <p>Nunc id dui at sapien faucibus fermentum ut vel diam. Nullam tempus, nunc id efficitur
-                            sagittis, urna est ultricies eros, ac porta sem turpis quis leo.</p>
+                                <p>I've had the pleasure to work and study in three distinct countries
+                                    in Europe. The highlights are displayed bellow, with more
+                                    detailed descriptions and other works residing in my CV</p>
                             </div>
                         </div>
                     </div>

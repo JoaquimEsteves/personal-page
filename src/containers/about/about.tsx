@@ -104,20 +104,19 @@ export class About extends React.PureComponent<aboutProps> {
                                     I'm a Portuguese Software Engineer, I like long walks on the beach, travelling
                                     and programming.
                                     <br />
-                                    <small>(Being serious now, given that this isn't a
-                                        dating website profile)</small>
+                                    <small>(Being serious now, given that this isn't a profile on a 
+                                        dating website)</small>
                                     <br />
                                     On my right is an overview of the
                                     programming languages I've worked with.
                                     <br />
-                                    I've also had to deal with quite a few frameworks and language supersets,
+                                    I've also had to deal with quite a few frameworks and language super-sets,
                                     so if you've got a Flask/React/Etc project don't hesitate to ask me for my experience!
 
                                 </p>
                                 <ul>
                                     {Info('Birth Date:', '01/09/39', 'lni-calendar')}
                                     {Info('Email:', '???????', 'lni-envelope')}
-                                    {Info('Phone Number', '???????', 'lni-phone-handset')}
                                     {Info('', 'Currently in Lyon - France', 'lni-map-marker')}
                                 </ul>
                                 <br />
@@ -140,7 +139,7 @@ export class About extends React.PureComponent<aboutProps> {
                                     <li className="mt-2">
                                         Data Science
                                         <p>
-                                            As a self admited Python nerd and zealot I'd love to sink my teeth into
+                                            As a self ted Python nerd and zealot I'd love to sink my teeth into
                                             this field!
                                         </p>
                                     </li>
@@ -177,28 +176,27 @@ export class About extends React.PureComponent<aboutProps> {
                                     <li>
                                         Portuguese
                                         <p>
-                                            It's my mother tongue, and it's still my favourite language.
-                                            Although
+                                            It's my mother tongue, although I've been told I have a funny accent.
                                         </p>
                                     </li>
                                     <li>
                                         Spanish
                                         <p>
-                                            All Portuguese come with the Spanish language package by default.
-                                            Many of my friends throughout my life as an emigrant have been Spaniards,
+                                            All Portuguese come with the Spanish-language package by default.
+                                            Many of the friends I've made throughout my life as an emigrant have been Spaniards,
                                             and as such I've developed a not-bad accent.
                                             <br/>
                                             Just don't ask me to write in Spanish, It's basically Portuguese with 
-                                            gramatical mistakes! I can't for the life of me write it
+                                            the grammar all wrong, I can't for the life of me get it.
                                         </p>
                                     </li>
                                     <li>
                                         English
                                         <p>
                                             I lived two years in Plymouth UK and have considered myself quite fluent
-                                             for many years.
+                                             in English for many years.
                                              <br/> I've even developed a killer impression of the accent,
-                                              you should ask me about it
+                                              you can ask me about it on any occasion.
                                         </p>
                                     </li>
                                     <li>

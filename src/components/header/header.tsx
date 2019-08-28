@@ -35,7 +35,7 @@ const Header = () => {
                             <p>Computer Software Engineer</p>
                         </div>
                         <div className="col-lg-6 offset-xl-1">
-                            <img src="" alt="Sou eu!" />
+                            <img src="" alt="me!" />
                         </div>
                     </div>
                 </div>
