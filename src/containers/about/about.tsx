@@ -21,7 +21,7 @@ export const exampleSkills: aboutProps = {
         {
             name:
                 <Fragment>
-                    <br /><small>(It's been a long time since I've touched these)</small> Java 
+                    <small>(It's been a long time since I've touched these)</small> <br /> Java 
                 </Fragment>,
             proficiency: 2
         },
