@@ -159,7 +159,9 @@ export class About extends React.PureComponent<aboutProps> {
                                             I've mostly worked as a backend developer, with this very site being the
                                             first project I've ever completed using a javascript library that's more
                                             recent than jQuery.
+                                            <br/>
                                             However, I've  got a huge interest in this field :)
+                                            <br />
                                             <br />
                                             The code for this page is freely available for snooping    
                                             <a
