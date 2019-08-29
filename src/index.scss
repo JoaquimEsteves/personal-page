@@ -31,6 +31,19 @@ body {
     sans-serif;
   font-size: 6+16px;
   line-height: 1.8;
+
+  // Anything Smaller than an ipad
+  @media screen and (max-width: 767px) {
+    // Lets the text breathe a bit better
+    p {
+      line-height: 40px;
+    }
+
+    li {
+      margin-top: 1.5rem;
+    }
+}
+
   section {
     margin-top: 50px;
     z-index: 99;
