@@ -211,8 +211,8 @@ export class About extends React.PureComponent<aboutProps> {
                                              having worked for the past six months entirely in French; although it's
                                             by far my weakest language.
                                             In classical immigrant fashion, the number of words I know is in the dozens,
-                                            and I get stumped when to native speakers talk to each other
-                                            and I get stuck in the middle, mais je parviens.
+                                            and I get stumped when two native speakers talk to each other
+                                            and I'm stuck in the middle, mais je parviens.
                                         </p>
                                     </li>
                                 </ul>
