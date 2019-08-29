@@ -107,7 +107,7 @@ export class About extends React.PureComponent<aboutProps> {
                                     <small>(Being serious now, given that this isn't a profile on a 
                                         dating website)</small>
                                     <br />
-                                    On my right is an overview of the
+                                    In this section you'll find an overview of the
                                     programming languages I've worked with.
                                     <br />
                                     I've also had to deal with quite a few frameworks and language super-sets,

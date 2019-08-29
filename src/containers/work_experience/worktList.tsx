@@ -116,6 +116,9 @@ class WorkList extends React.Component<WorkListProps, WorkListState> {
                             </div>
                         </div>
                         <div className="col-md-5 work-map">
+                            <p className="explanation mb-5">
+                                Pssst, click on my experience to spot where I work_cardson the map 
+                            </p>
                             <ErrorBoundary>
                                 {Map(this.state.location_src)}
                             </ErrorBoundary>
