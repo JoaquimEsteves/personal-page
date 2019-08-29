@@ -24,11 +24,11 @@ const Header = () => {
             <div className="header-content d-flex align-items-center">
                 <div className="container">
                     <div className="row align-items-center">
-                        <div className="col-xl-5 col-lg-6">
+                        <div className=" col-lg-6">
                             <h1 className="title">Joaquim Esteves</h1>
                             <p>Computer Software Engineer</p>
                         </div>
-                        <div className="col-6 offset-xl-1 mt-10">
+                        <div className="col-xl-5 col-lg-6">
                             <div className="image_of_me" title="me, looking all handsome" />
                         </div>
                     </div>
