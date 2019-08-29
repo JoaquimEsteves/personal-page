@@ -10,8 +10,8 @@ export type experience_paragraph = {
 export const city_college_plymouth: experience_paragraph = {
     title: "City College Plymouth, UK",
     paragraphs: [
-        `A-Levels, Finished in July 2012
-        Subjects: Maths, Physics and Film Studies`,
+        <Fragment>A-Levels, Finished in July 2012<br/></Fragment>,
+        `Subjects: Maths, Physics and Film Studies`,
         `I've had the priviledge of having studied in the United Kingdom, which did wonders for my English!`
     ],
     location: {
@@ -49,7 +49,7 @@ export const orange: experience_paragraph = {
         Users were also able to execute 'compute' functions on the data. These included classic regex wildcards and
         other fancier operations such as a dynamic pivot table that counted the and displayed any row!
         The data would then be presented to in a nice, user friendly way, in part thanks to a javascript library 
-        called DataTables`,
+        called DataTables.`,
         <Fragment>
             Technical stack included <code>PHP</code> and the <code>OFT</code> framework,
             an Orange-made fork of the popular Zend framework.
@@ -77,7 +77,7 @@ export const hyperloop: experience_paragraph = {
         (Sadly some these ended up being discarded, as the team had yet to transition to office 365)</Fragment>,
         <Fragment>
             By far the coolest project I had the pleasure to work with was the development of a nodal thermic
-            simulator for the hyperloop tube!
+            simulator for the HyperLoop tube!
             The program, entirely written in <code>Python</code> with some numpy on the side, would simulate heat transfers
             throughout the life cycle of a HyperLoop tube's use and show it all of in a cute <code>plotly</code> graph.
         </Fragment>
@@ -124,7 +124,7 @@ export const sigfox: experience_paragraph = {
             <small>(thank heavens, I didn't have to touch the C libraries)</small>
         </Fragment>,
         `The server used the async Python libraries quite extensively, and it was a pleasure to work with.`,
-        `As a full-stack developer I also had to edit the existing Front-End. The Front-End was build with the classic 
+        `As a full-stack developer I also had to edit the existing Front-End. The Front-End was built with the classic 
         tools of plain old Vanilla Js, HTML and CSS with a dash of bootstrap.`
     ],
     location: {
