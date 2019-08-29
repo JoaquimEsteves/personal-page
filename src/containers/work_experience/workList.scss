@@ -17,6 +17,13 @@
     }
 }
 
+.explanation {
+    // Anything Bigger than an ipad
+    @media screen and (min-width: 767px) {
+        display:none;
+    }
+}
+
 .work-box {
     overflow-wrap: break-word;
     margin: 5px;
