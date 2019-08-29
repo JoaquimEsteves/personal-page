@@ -43,7 +43,7 @@ const Skill = (skill: skill) => {
                     </div>
                 </div>
             </div>
-            <div className="skill-bar" data-width={data_with}>
+            <div className="skill-bar">
                 <div className="bar-inner">
                     <div className="bar progress-line" data-width={data_with}></div>
                 </div>
@@ -81,10 +81,20 @@ export class About extends React.PureComponent<aboutProps> {
 
     componentDidMount() {
         $('.progress-line').each(function () {
-            let max_width = $(this).attr('data-width');
-            if (this.style.width !== undefined) {
-                this.style.width = max_width + '%' as string;
+            let max_width = +($(this).attr('data-width') as string);
+            if (this.style.width === undefined) {
+                // nothing todo
+                return;
             }
+            let width = 1;
+            let id = setInterval(() => {
+                if (width >= max_width) {
+                  clearInterval(id);
+                } else {
+                  width++; 
+                  this.style.width = width + '%'; 
+                }
+            }, 10);
         });
     }
 

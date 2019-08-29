@@ -41,7 +41,6 @@ $tiny_pad: 5px;
 
 .about-skills .skill-item .skill-bar .bar-inner .progress-line {
     height: $tiny_pad;
-    border-radius: 20px;
     background-color: $sub_colour;
     transition: width 2s ease-out 2s;
     width: 0%;
