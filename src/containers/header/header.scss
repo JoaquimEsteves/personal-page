@@ -29,7 +29,7 @@
     }
 }
 
-.image_of_me {
+.image_of_me_no_webp {
     margin: 5vh auto;
 
     box-shadow: 0px 0px 15px 0px $main_colour;
@@ -51,6 +51,18 @@
         height: 512px;
         margin-top: 10vh;
     }
+}
 
-    
+.image_of_me_webp {
+    @extend .image_of_me_no_webp;
+    @media screen and (min-width: 380px) {
+        background-image: url('/img/icons/icon-192x192.webp');
+    }
+    // Anything Smaller than an ipad
+    @media screen and (max-width: 767px) and (min-height: 500px) {
+        background-image: url('/img/icons/icon-384x384.webp');
+    }
+    @media screen and (min-width: 767px) {
+        background-image: url('/img/icons/icon-512x512.webp');
+    }
 }
