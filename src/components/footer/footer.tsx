@@ -15,9 +15,8 @@ const Footer = () => {
                             href="https://www.linkedin.com/in/joaquim-esteves">
                             <i className="lni-linkedin-original" /></a>
                         <a
-                            target="_blank"
                             rel="noopener noreferrer"
-                            href="_blank"><i className="lni-download"></i></a>
+                            href="/CV_joaquim_esteves.pdf?"><i className="lni-download"></i></a>
                     </div>
                 </div>
             </div>
