@@ -10,8 +10,8 @@ export type experience_paragraph = {
 export const city_college_plymouth: experience_paragraph = {
     title: "City College Plymouth, UK",
     paragraphs: [
-        `A-Levels, Finished in July 2012
-        Subjects: Maths, Physics and Film Studies`,
+        <Fragment>A-Levels, Finished in July 2012<br/></Fragment>,
+        `Subjects: Maths, Physics and Film Studies`,
         `I've had the priviledge of having studied in the United Kingdom, which did wonders for my English!`
     ],
     location: {
@@ -45,15 +45,15 @@ export const orange: experience_paragraph = {
     Duration: 6 Months`,
     paragraphs: [
         'Joined the Orange Big Data team in order to develop a new interface for an old system.',
-        `The project, codenamed streams, was designed, to parse and filter a database with more than 200 million entries!
+        `The project, codenamed streams, was designed to parse and filter a database with more than 200 million entries!
         Users were also able to execute 'compute' functions on the data. These included classic regex wildcards and
         other fancier operations such as a dynamic pivot table that counted the and displayed any row!
         The data would then be presented to in a nice, user friendly way, in part thanks to a javascript library 
-        called DataTables`,
+        called DataTables.`,
         <Fragment>
-            Technical stack included, <code>PHP</code> and the <code>OFT</code> framework,
-            an Orange made fork of the popular Zend framework.
-            I'm particularly proud of the server-side data processing, as the interface queried the backend extensively for the next table of data!
+            Technical stack included <code>PHP</code> and the <code>OFT</code> framework,
+            an Orange-made fork of the popular Zend framework.
+            I'm particularly proud of the server-side data processing, as the interface queried the Back-End extensively for the next table of data!
         </Fragment>,
     ],
     location: {
@@ -68,21 +68,19 @@ export const hyperloop: experience_paragraph = {
     Duration: 6 Months`,
     paragraphs: [
         <Fragment>
-            Joined the HyperLoop <i>R&D</i> team as an on-site consultant
+            Joined the HyperLoop <i>R&D</i> team as an on-site consultant.
         </Fragment>,
-        `My main task was to advise the team on the different suppliers of cloud services`,
+        `My main task was to advise the team on the different suppliers of cloud services.`,
         <Fragment>
-            I also had the pleasure of automating some boring HR related tasks. This was mostly done through Google's,
+            I also had the pleasure of automating some boring HR related tasks. This was mostly done through Google's
         own scripting language <code>GAS</code> and later on by programming Excel Add-ins.
         (Sadly some these ended up being discarded, as the team had yet to transition to office 365)</Fragment>,
         <Fragment>
             By far the coolest project I had the pleasure to work with was the development of a nodal thermic
-            simulator for the hyperloop tube!
+            simulator for the HyperLoop tube!
             The program, entirely written in <code>Python</code> with some numpy on the side, would simulate heat transfers
-            throughout the life cycle of a HyperLoop tube's use and show it all of in a cute <code>plotly</code> graph..
+            throughout the life cycle of a HyperLoop tube's use and show it all of in a cute <code>plotly</code> graph.
         </Fragment>
-
-
     ],
     location: {
         center: [43.5751,1.4414],
@@ -96,7 +94,7 @@ export const telespazio: experience_paragraph = {
     title: `Telespazio - AKKA Toulouse
     Duration: 1 Month`,
     paragraphs: [
-        `Development unit-tests for an ongoing project related to updating an old server`,
+        `Development of unit-tests for an ongoing project related to updating an old server.`,
         <Fragment>
             The <code>C++</code> server was undergoing an transformation in regards to their
         messaging protocol. Having recently adopted the <code>Protobuf</code> protocol.
@@ -113,10 +111,10 @@ export const telespazio: experience_paragraph = {
 
 export const sigfox: experience_paragraph = {
     title: `Sigfox - AKKA Toulouse
-    Duration: 4 Month`,
+    Duration: 4 Months`,
     paragraphs: [
         `Acted as a full-stack developer for a website that aimed to emulate IoT development!`,
-        `The application's goal was to make IoT development simple, by emulating all of the server's backend in our own Python
+        `The application's goal was to make IoT development simple, by emulating all of the server's Back-End in our own Python
         server, developers would be able to quickly test out signals and logic.`,
         <Fragment>
             The server was written in <code>Python</code>, with some glued <code>C</code> libraries acting as
@@ -126,8 +124,8 @@ export const sigfox: experience_paragraph = {
             <small>(thank heavens, I didn't have to touch the C libraries)</small>
         </Fragment>,
         `The server used the async Python libraries quite extensively, and it was a pleasure to work with.`,
-        `As a full-stack developer I also had to edit the existing Front-End. The Front end was build with the classic 
-        front end tools of plain old Vanilla Js, HTML and CSS with a dash of bootstrap`
+        `As a full-stack developer I also had to edit the existing Front-End. The Front-End was built with the classic 
+        tools of plain old Vanilla Js, HTML and CSS with a dash of bootstrap.`
     ],
     location: {
         center: [43.5751,1.4414],

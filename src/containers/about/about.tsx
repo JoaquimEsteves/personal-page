@@ -43,7 +43,7 @@ const Skill = (skill: skill) => {
                     </div>
                 </div>
             </div>
-            <div className="skill-bar" data-width={data_with}>
+            <div className="skill-bar">
                 <div className="bar-inner">
                     <div className="bar progress-line" data-width={data_with}></div>
                 </div>
@@ -81,10 +81,20 @@ export class About extends React.PureComponent<aboutProps> {
 
     componentDidMount() {
         $('.progress-line').each(function () {
-            let max_width = $(this).attr('data-width');
-            if (this.style.width !== undefined) {
-                this.style.width = max_width + '%' as string;
+            let max_width = +($(this).attr('data-width') as string);
+            if (this.style.width === undefined) {
+                // nothing todo
+                return;
             }
+            let width = 1;
+            let id = setInterval(() => {
+                if (width >= max_width) {
+                  clearInterval(id);
+                } else {
+                  width++; 
+                  this.style.width = width + '%'; 
+                }
+            }, 10);
         });
     }
 
@@ -107,7 +117,7 @@ export class About extends React.PureComponent<aboutProps> {
                                     <small>(Being serious now, given that this isn't a profile on a 
                                         dating website)</small>
                                     <br />
-                                    On my right is an overview of the
+                                    In this section you'll find an overview of the
                                     programming languages I've worked with.
                                     <br />
                                     I've also had to deal with quite a few frameworks and language super-sets,
@@ -211,8 +221,8 @@ export class About extends React.PureComponent<aboutProps> {
                                              having worked for the past six months entirely in French; although it's
                                             by far my weakest language.
                                             In classical immigrant fashion, the number of words I know is in the dozens,
-                                            and I get stumped when to native speakers talk to each other
-                                            and I get stuck in the middle, mais je parviens.
+                                            and I get stumped when two native speakers talk to each other
+                                            and I'm stuck in the middle, mais je parviens.
                                         </p>
                                     </li>
                                 </ul>

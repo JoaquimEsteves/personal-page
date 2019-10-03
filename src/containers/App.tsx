@@ -2,7 +2,7 @@ import React, { lazy, Suspense } from 'react';
 import { exampleWork } from './work_experience/worktList';
 import Footer from '../components/footer/footer';
 import ErrorBoundary from '../components/error_boundaries/error-boundaries';
-import Header from '../components/header/header';
+import Header from '../containers/header/header';
 import { exampleSkills, About } from './about/about';
 import Contact from './contact/contact';
 import Particles, { IParticlesParams } from "react-particles-js";

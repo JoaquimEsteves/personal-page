@@ -32,6 +32,18 @@ body {
   font-size: 6+16px;
   line-height: 1.8;
 
+  // Anything Smaller than an ipad
+  @media screen and (max-width: 767px) {
+    // Lets the text breathe a bit better
+    p {
+      line-height: 40px;
+    }
+
+    li {
+      margin-top: 1.5rem;
+    }
+}
+
   section {
     margin-top: 50px;
     z-index: 99;
@@ -164,13 +176,11 @@ p {
   font-size: 6+16px;
   font-weight: 400;
   line-height: 28px;
-  color: #000000c9;
   margin: 0px;
 }
 
 .section-title .title {
   font-weight: 700;
   font-size: 45px;
-  color: #000;
   padding-bottom: 20px;
 }

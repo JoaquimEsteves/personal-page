@@ -2,8 +2,15 @@
 
 .contact-form {
     text-align: center;
+
+    input, textarea, button {
+        position: relative;
+    }
+
     margin-top: 30px;
-    input, textarea {
+
+    input,
+    textarea {
         width: 60%;
         height: 55px;
         border-radius: 5px;
