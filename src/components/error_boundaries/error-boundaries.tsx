@@ -23,7 +23,7 @@ class ErrorBoundary extends React.Component<{}, ErrorState> {
             return (
                 <div>
                     <h1>Whoops, there's been an error!</h1>
-                    <p>If you're a nerd you can check the console and send me error :)</p>
+                    <p>If you're a computer geek you can check the console and send me error :)</p>
                 </div>
             );
         }
