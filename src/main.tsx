@@ -1,5 +1,7 @@
-import { render } from 'preact'
+import { hydrate } from 'preact'
 import { App } from './app'
 import './index.css'
 
-render(<App />, document.getElementById('app')!)
+hydrate(<App />, document.getElementById('app') as HTMLElement)
+
+
