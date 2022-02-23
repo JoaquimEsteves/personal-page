@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "vite --host",
     "preview": "vite preview",
-    "build": "node static_render"
+    "build": "node static_render.cjs"
   },
   "dependencies": {
     "preact": "^10.5.15",
