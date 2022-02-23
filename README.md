@@ -1,25 +1,10 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## HOW TO RUN:
 
-It's pretty neat!
-
-#### How to build and develop
-
-```
-npm install
-
-```
-#### and then...
-##### starts a dev server
-
-```
-npm start
-```
-##### sets up a build folder!
-```
-npm build
+```bash
+$ bash buggy_styled.sh
 ```
 
+## Requirements:
 
-#### Tech Stack
-
-<code>React</code> (and everything that comes with create react app), <code> SCSS </code>
+  * docker
+  * python3 (for a simple http server. You can use your own)
