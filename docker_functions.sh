@@ -4,7 +4,6 @@
 # Holy Bash who art in heaven.
 # Cursed be thy pitfalls
 # set -euxo pipefail
-set -x
 # Commented by default as we don't want to set the error flag stuff if we're
 # sourcing the file
 

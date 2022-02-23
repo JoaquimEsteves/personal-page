@@ -1,10 +1,15 @@
-import { Logo } from './logo'
+import { Logo } from "./logo";
+import styled from "styled-components";
+
+const BadName = styled.p`
+  color: red;
+`;
 
 export function App() {
   return (
     <>
       <Logo />
-      <p>Hello Vite + Preact!</p>
+      <BadName>Hello Vite + Preact!</BadName>
       <p>
         <a
           class="link"
@@ -16,5 +21,6 @@ export function App() {
         </a>
       </p>
     </>
-  )
+  );
 }
+

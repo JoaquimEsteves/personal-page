@@ -15,8 +15,10 @@ const toAbsolute = (p) => path.resolve(__dirname, p);
   await build({
     build: {
       ssr: true,
-      rollupOptions: { input: toAbsolute("./src/renderToHtml.ts") },
+      rollupOptions: { input: toAbsolute("./src/renderToHtml.tsx") },
       outDir: toAbsolute("./dist/ssr_crap"),
+      // Make things nice and readable while I have a bug...
+      minify: false,
     },
   });
 
@@ -30,7 +32,8 @@ const toAbsolute = (p) => path.resolve(__dirname, p);
   const filePath = "dist/index.html";
   fs.writeFileSync(toAbsolute(filePath), html);
   // Finally, delete the ssr_crap folder
-  fs.rmSync(toAbsolute("./dist/ssr_crap"), { recursive: true, force: true });
+  // COMMENTED: Stuffs buggy atm; so I'm leaving it up
+  // fs.rmSync(toAbsolute("./dist/ssr_crap"), { recursive: true, force: true });
   console.log("pre-rendered:", filePath);
 })();
 
