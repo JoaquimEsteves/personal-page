@@ -2,12 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" href="/public/img/icons/icon-192x192.png" />
+    <!-- Vite warns us that we don't need to add public to the route 
+	 Yeah, it sounded weird to me too...
+    -->
+    <link rel="icon" href="/img/icons/icon-192x192.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
+    <!--ssr-css-->
   </head>
   <body>
-    <div id="root"><!--app-html--></div>
+    <div id="root"><!--ssr-html--></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
