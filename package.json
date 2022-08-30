@@ -16,6 +16,6 @@
     "@preact/preset-vite": "^2.1.5",
     "@types/styled-components": "^5.1.23",
     "typescript": "^4.5.4",
-    "vite": "^2.8.0"
+    "vite": "^2.9.13"
   }
 }
